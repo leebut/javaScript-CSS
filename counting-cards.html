@@ -4,13 +4,14 @@
 <title>Counting Cards</title>
 	</head>
 	<body>
+<!-- //// Provide element for the resulting instructions //// -->
 	<h2 id="whattodo"></h2>
-<h3 id="count"></h3>
+
 <script>
 var count = 0;
 
 function cc(card) {
-  // Only change code below this line
+  //// If statment to check conditions and return the instructions ////
 	if(card >1 && card < 7)
 		{
 			console.log("Card was: " + card);
@@ -29,20 +30,15 @@ function cc(card) {
 		
   if(count > 0)
     {
-      console.log(count + " Bet");
+      document.getElementById("whattodo").innerHtml=(count + " Bet");
     }
   else
-     console.log (count + " Hold");
-    
-    // Only change code above this line
-}
+     document.getElementById("whattodo").innerHtml=(count + " Hold");
+    }
 
-// Add/remove calls to test your function.
-// Note: Only the last will display
+//// Call the function and pass arguments ////
  cc('K'), cc(6), cc(7), cc(4), cc(2);
-
-		</script>
-
-
+	
+	</script>
 </body>
 </html>
