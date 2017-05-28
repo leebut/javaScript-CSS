@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<title>Counting Cards</title>
+	</head>
+	<body>
+	<h2 id="whattodo"></h2>
+<h3 id="count"></h3>
+<script>
+var count = 0;
+
+function cc(card) {
+  // Only change code below this line
+	if(card >1 && card < 7)
+		{
+			console.log("Card was: " + card);
+			count++;
+		}
+	else if(card > 6 && card < 10)
+		{
+			console.log("Card was: " + card);
+			count = count;
+		}
+	else
+		{
+			console.log("Card was: " + card);
+			count--;
+		}
+		
+  if(count > 0)
+    {
+      console.log(count + " Bet");
+    }
+  else
+     console.log (count + " Hold");
+    
+    // Only change code above this line
+}
+
+// Add/remove calls to test your function.
+// Note: Only the last will display
+ cc('K'), cc(6), cc(7), cc(4), cc(2);
+
+		</script>
+
+
+</body>
+</html>
